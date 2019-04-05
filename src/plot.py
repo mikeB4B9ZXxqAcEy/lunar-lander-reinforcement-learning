@@ -12,7 +12,7 @@ YLABEL = r'\textbf{Score}'
 REQUIRED_SCORE = 200
 ##############################################################################
 def plot_training_scores():
-    df = pd.read_csv('./results/train_scores.csv')
+    df = pd.read_csv('../results/train_scores.csv')
     df['attempt_num'] = range(1, len(df) + 1)
 
 
@@ -37,12 +37,12 @@ def plot_training_scores():
     plt.xlabel(XLABEL)
     plt.ylabel(YLABEL)
     plt.title(r'\textbf{Learning Results Over Attempts}')
-    plt.savefig('results/train_scores.pdf')
+    plt.savefig('../results/train_scores.pdf')
     plt.show()
 
 
 def plot_MA_train_scores():
-    df = pd.read_csv('./results/train_scores.csv')
+    df = pd.read_csv('../results/train_scores.csv')
     df['attempt_num'] = range(1, len(df) + 1)
 
     print(df.head())
@@ -67,13 +67,13 @@ def plot_MA_train_scores():
     plt.xlabel(XLABEL)
     plt.ylabel(YLABEL)
     plt.title(r'\textbf{Learning Results Over Attempts}')
-    plt.savefig('results/train_scores_MA.pdf')
+    plt.savefig('../results/train_scores_MA.pdf')
     plt.show()
 
 #############################################################################
 
 def plot_play_scores():
-    df = pd.read_csv('./results/play_scores.csv')
+    df = pd.read_csv('../results/play_scores.csv')
     df['attempt_num'] = range(1, len(df) + 1)
 
     print(df.head())
@@ -90,11 +90,11 @@ def plot_play_scores():
     plt.xlabel(XLABEL)
     plt.ylabel(YLABEL)
     plt.title(r'\textbf{Playing Results Over Attempts}')
-    plt.savefig('results/play_scores.pdf')
+    plt.savefig('../results/play_scores.pdf')
     plt.show()
 
 def plot_MA_play_scores():
-    df = pd.read_csv('./results/play_scores.csv')
+    df = pd.read_csv('../results/play_scores.csv')
     df['attempt_num'] = range(1, len(df) + 1)
 
     print(df.head())
@@ -113,7 +113,7 @@ def plot_MA_play_scores():
     plt.xlabel(XLABEL)
     plt.ylabel(YLABEL)
     plt.title(r'\textbf{Playing Results Over Attempts}')
-    plt.savefig('results/play_scores_MA.pdf')
+    plt.savefig('../results/play_scores_MA.pdf')
     plt.show()
 
 plot_training_scores()

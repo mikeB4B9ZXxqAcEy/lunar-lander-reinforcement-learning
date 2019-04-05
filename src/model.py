@@ -19,4 +19,4 @@ class Model:
 
 if __name__ == '__main__':
     from keras.utils import plot_model
-    plot_model(Model.build_model(), to_file='results/model_diagram.png')
+    plot_model(Model.build_model(), to_file='../results/model_diagram.png')
