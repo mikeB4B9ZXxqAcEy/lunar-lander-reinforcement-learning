@@ -10,8 +10,25 @@ This repo demonstrates how duelling neural networks can be applied to a reinforc
 git clone https://github.com/mikeroher/lunar-lander-reinforcement-learning llrl/
 cd llrl
 
+# Change `K.py` to adjust any parameters or leave file as-is to use defaults
+# Default parameters are:
+#   EPISODES = 3000
+#   LEARNING_RATE = 0.25e-3
+#   MEMORY_SIZE = 100_000
+#   EPSILON_DECAY = 0.99995
+#   EPSILON_MIN = 0.05
+#   EPSILON_INIT = 1
+#   BATCH_SIZE = 64
+#   DISCOUNT_FACTOR = 0.99
+#   STATE_SIZE = 8
+#   ACTION_SIZE = 4
+#   PRINT_EVERY = 100
+
 # To run the simulation
 python main.py
+
+# To generate plots
+python plot.py
 ```
 
 ## Results
